@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Simple Landing Page</title>
+    <link rel="icon" type="image/x-icon" href="img/slp-logo-icon.svg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ 
+</head>
+
+<body>
+
+    <header> <!-- TOP BAR -->
+        <div class="container align-center">
+            <div>
+                <a href="#"><img src="img/slp-logo-icon.svg" width="100" class=""></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="top-banner"> <!-- BANNER -->
+        <div class="container">
+            <div class="row">
+                <div class="col align-middle"> <!-- A -->
+                    <div class="align-middle-content">
+                        <h2>
+                            Uma página pensada para vender!
+                        </h2>
+                        <br>
+                        <ul class="">
+                            <li class="list-check">Página simples e eficiente</li>
+                            <li class="list-check">Moderna</li>
+                            <li class="list-check">Mais performance</li>
+                            <li class="list-check">Conexão com cliente</li>
+                            <li class="list-check">Captação de leads</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col align-middle"> <!-- B -->
+                    <div class="row"> <!-- FORM -->
+                        <form action="envio.php" method="POST" id="form-lead">
+                            <h4>
+                                Informe seus dados<br>para falar com um consultor:
+                            </h4>
+                            <fieldset>
+                                <div>
+                                    <label for="nome" id="label-inline">Nome:</label>
+                                    <input type="text" name="nome" id="nome">
+                                </div>
+                                <div>
+                                    <label for="email" id="label-inline">Email:</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                                <div>
+                                    <label for="cidade" id="label-inline">Cidade:</label>
+                                    <input type="text" name="cidade" id="cidade">
+                                </div>
+                                <div>
+                                    <label for="telefone" id="label-inline">Telefone:</label>
+                                    <input type="tel" name="telefone" id="telefone">
+                                </div>
+                                <h5>Qual seu tipo de empresa?</h5>
+                                <select name="tipo" id="tipo">
+                                    <option value="#"></option>
+                                    <option value="Tipo A">Tipo A</option>
+                                    <option value="Tipo B">Tipo B</option>
+                                    <option value="Tipo C">Tipo C</option>
+                                </select>
+                                <br><br>
+                                <div class="btn-blue full-width">
+                                    <input type="submit" name="submit" id="submit" value="FALE COM UM CONSULTOR" class="btn-blue-mask">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+</html>
