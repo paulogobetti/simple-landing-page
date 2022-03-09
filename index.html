@@ -19,7 +19,7 @@
     <header> <!-- TOP BAR -->
         <div class="container align-center">
             <div>
-                <a href="#"><img src="img/slp-logo-icon.svg" width="100" class=""></a>
+                <a href="#"><img src="img/slp-logo-icon.svg" width="100" class="margin-please"></a>
             </div>
         </div>
     </header>
@@ -28,29 +28,29 @@
         <div class="container">
             <div class="row">
                 <div class="col align-middle"> <!-- A -->
-                    <div class="align-middle-content">
-                        <h2>
-                            Uma página pensada para vender!
+                    <div class="align-middle-v">
+                        <h2 class="text-white">
+                            A simple page designed to sell!
                         </h2>
                         <br>
                         <ul class="">
-                            <li class="list-check">Página simples e eficiente</li>
-                            <li class="list-check">Moderna</li>
-                            <li class="list-check">Mais performance</li>
-                            <li class="list-check">Conexão com cliente</li>
-                            <li class="list-check">Captação de leads</li>
+                            <li class="list-check font-white">Página simples e eficiente</li>
+                            <li class="list-check font-white">Moderna</li>
+                            <li class="list-check font-white">Mais performance</li>
+                            <li class="list-check font-white">Conexão com cliente</li>
+                            <li class="list-check font-white">Captação de leads</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col align-middle"> <!-- B -->
-                    <div class="row"> <!-- FORM -->
-                        <form action="envio.php" method="POST" id="form-lead">
-                            <h4>
+                <div class="col" style="max-width: 35%;"> <!-- B -->
+                    <div class="row" > <!-- FORM -->
+                        <form action="envio.php" method="POST" id="form-lead" class="form-container">
+                            <h3>
                                 Informe seus dados<br>para falar com um consultor:
-                            </h4>
-                            <fieldset>
+                            </h3>
+                            <fieldset >
                                 <div>
-                                    <label for="nome" id="label-inline">Nome:</label>
+                                    <label for="nome" id="label-inline">Name:</label>
                                     <input type="text" name="nome" id="nome">
                                 </div>
                                 <div>
@@ -58,13 +58,14 @@
                                     <input type="email" name="email" id="email">
                                 </div>
                                 <div>
-                                    <label for="cidade" id="label-inline">Cidade:</label>
+                                    <label for="cidade" id="label-inline">City:</label>
                                     <input type="text" name="cidade" id="cidade">
                                 </div>
                                 <div>
-                                    <label for="telefone" id="label-inline">Telefone:</label>
-                                    <input type="tel" name="telefone" id="telefone">
+                                    <label for="telephone" id="label-inline">Telephone:</label>
+                                    <input type="tel" name="telephone" id="telephone">
                                 </div>
+                                <br>
                                 <h5>Qual seu tipo de empresa?</h5>
                                 <select name="tipo" id="tipo">
                                     <option value="#"></option>
@@ -73,8 +74,8 @@
                                     <option value="Tipo C">Tipo C</option>
                                 </select>
                                 <br><br>
-                                <div class="btn-blue full-width">
-                                    <input type="submit" name="submit" id="submit" value="FALE COM UM CONSULTOR" class="btn-blue-mask">
+                                <div class="full-width">
+                                    <input type="submit" name="submit" id="submit" value="FALE COM UM CONSULTOR" class="">
                                 </div>
                             </fieldset>
                         </form>
