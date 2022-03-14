@@ -24,64 +24,81 @@
         </div>
     </header>
 
-    <section id="top-banner"> <!-- BANNER -->
+    <section id="top-banner"> <!-- TOP BANNER -->
         <div class="container">
             <div class="row">
-                <div class="col align-middle"> <!-- A -->
-                    <div class="align-middle-v">
+                <div class="col relative" style="background: #000;"> <!-- A COL -->
+                    <div class="col-align-middle col-centralize">
                         <h2 class="text-white">
                             A simple page designed to sell!
                         </h2>
                         <br>
                         <ul class="">
-                            <li class="list-check font-white">Página simples e eficiente</li>
-                            <li class="list-check font-white">Moderna</li>
-                            <li class="list-check font-white">Mais performance</li>
-                            <li class="list-check font-white">Conexão com cliente</li>
-                            <li class="list-check font-white">Captação de leads</li>
+                            <li class="list-check font-white">Simple and efficient page</li>
+                            <li class="list-check font-white">Modern</li>
+                            <li class="list-check font-white">More performance</li>
+                            <li class="list-check font-white">Client connection</li>
+                            <li class="list-check font-white">Lead capture</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col" style="max-width: 35%;"> <!-- B -->
-                    <div class="row" > <!-- FORM -->
-                        <form action="envio.php" method="POST" id="form-lead" class="form-container">
+                <div class="col col-h-centralize" style="background: #fd0;"> <!-- B COL -->
+                    <div class="row">
+                        <form action="config.php" method="POST" id="form-lead" class="form-container"> <!-- FORM -->
                             <h3>
-                                Informe seus dados<br>para falar com um consultor:
+                                Enter your details<br>to speak with a consultant:
                             </h3>
-                            <fieldset >
-                                <div>
-                                    <label for="nome" id="label-inline">Name:</label>
-                                    <input type="text" name="nome" id="nome">
-                                </div>
-                                <div>
-                                    <label for="email" id="label-inline">Email:</label>
-                                    <input type="email" name="email" id="email">
-                                </div>
-                                <div>
-                                    <label for="cidade" id="label-inline">City:</label>
-                                    <input type="text" name="cidade" id="cidade">
-                                </div>
-                                <div>
-                                    <label for="telephone" id="label-inline">Telephone:</label>
-                                    <input type="tel" name="telephone" id="telephone">
-                                </div>
+                            <fieldset>
+                                <label for="nome" id="label-inline">Name:</label>
+                                <input type="text" name="nome" id="nome">
                                 <br>
-                                <h5>Qual seu tipo de empresa?</h5>
-                                <select name="tipo" id="tipo">
+                                <label for="email" id="label-inline">Email:</label>
+                                <input type="email" name="email" id="email">
+                                <br>
+                                <label for="cidade" id="label-inline">City:</label>
+                                <input type="text" name="cidade" id="cidade">
+                                <br>
+                                <label for="telephone" id="label-inline">Telephone:</label>
+                                <input type="tel" name="telephone" id="telephone">
+                                <br><br>
+                                <h5>What is your company's niche?</h5>
+                                <select name="type" id="type">
                                     <option value="#"></option>
-                                    <option value="Tipo A">Tipo A</option>
-                                    <option value="Tipo B">Tipo B</option>
-                                    <option value="Tipo C">Tipo C</option>
+                                    <option value="Type A">Type A</option>
+                                    <option value="Type B">Type B</option>
+                                    <option value="Type C">Type C</option>
                                 </select>
                                 <br><br>
                                 <div class="full-width">
-                                    <input type="submit" name="submit" id="submit" value="FALE COM UM CONSULTOR" class="">
+                                    <input type="submit" name="submit" id="submit" value="Speak With A Consultant" class="uppercase">
                                 </div>
                             </fieldset>
                         </form>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container d-flex">
+            <div class="col">
+                <h2 class="">
+                    A simple page designed to sell!
+                </h2>
+                <br>
+                <ul class="">
+                    <li class="list-check font-white">Simple and efficient page</li>
+                    <li class="list-check font-white">Modern</li>
+                    <li class="list-check font-white">More performance</li>
+                    <li class="list-check font-white">Client connection</li>
+                    <li class="list-check font-white">Lead capture</li>
+                </ul>
+            </div>
+            <div class="col col-centralize">
+                Hello
+            </div>
+
         </div>
     </section>
     
