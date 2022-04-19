@@ -1,3 +1,10 @@
+<?php
+
+   include_once('config.php');
+   include_once('action.php');
+
+?>
+
 <!DOCTYPE HTML>
 
 <html>
@@ -44,7 +51,7 @@
                 </div>
                 <div class="col" > <!-- B COL -->
                     <div class="">
-                        <form action="config.php" method="POST" id="form-lead" class="form-container"> <!-- FORM -->
+                        <form action="action.php" method="POST" id="form-lead" class="form-container"> <!-- FORM -->
                             <h3>
                                 Enter your details<br>to speak with a consultant:
                             </h3>
