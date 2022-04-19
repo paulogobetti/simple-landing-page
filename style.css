@@ -7,6 +7,8 @@
 * {
     font-family: Raleway!important;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     color: #000;
 }
 
@@ -23,6 +25,25 @@ li {
     margin-bottom: 2%;
     color: var(--secondary-color);
 }
+
+/**************/
+
+/*
+.flexb-form {
+    width: 70%;
+    height: 85%;
+    background: #fff;
+    border-radius: .5em;
+    padding: 4%;
+    margin: 4%;
+}
+*/
+
+/**************/
+
+
+
+/******/
 
 /* GRID */
 
@@ -68,6 +89,47 @@ li {
 .img-fluid {
     max-width: 100%;
     height: auto;
+}
+
+.flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.flexb-body {
+    height: auto;
+    width: 100%;
+    background: #2a82ef;
+}
+
+.flexb-container {
+    height: 100%;
+    margin: auto;
+    max-width: 1140px;
+}
+
+.flexb-wrap {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.flexb-col-2 {
+    min-width: 50%;
+    display: inline-block;
+    background-color: blue;
+    padding: 3%;
+    align-content: center;
 }
 
 /* BOOTSTRAP */
@@ -120,8 +182,22 @@ li {
     position: relative;
 }
 
+/*
 .col-align-middle {
+    box-sizing: border-box;
     position: absolute;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: translateY( -50% );
+    -moz-transform: translateY( -50% );
+    transform: translateY( -50% );
+}
+*/
+
+.col-align-middle {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
     top: 50%;
     width: 100%;
     -webkit-transform: translateY( -50% );
