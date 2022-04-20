@@ -79,7 +79,7 @@
                                     </select>
                                     <br><br>
                                     <div class="full-width">
-                                        <input type="submit" name="submit" id="submit" value="Speak With A Consultant" class="uppercase">
+                                        <input type="submit" name="submit" id="submit" value="Talk to a consultant" class="uppercase">
                                     </div>
                                 </fieldset>
                             </form>
@@ -152,14 +152,14 @@
                     </div>
                     <div>
                         <button style="padding: 15px 25px;" class="uppercase">
-                            Fale com um consultor
+                        Talk to a consultant
                         </button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <br><br>
+        <br>
 
         <section class="padding-please"> <!-- LOREM 2 -->
             <div class="flexb-container">
@@ -167,20 +167,95 @@
                     <div class="flex-col-5">
                         <div class="col-align-middle">
                             <h2 class="align-right">
-                                Benefícios de<br>ser Hiperador
+                            Lorem ipsum<br>dolor sit amet
                             </h2>
                         </div>
                     </div>
                     <div class="flex-col-5">
                         <p class="border-left">
-                            Ofereça aos seus clientes um sistema completo e homologado em todo o país, a implantação e o suporte ficam por conta da Hiper.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <br><br>
+        <section>
+            <div class="flexb-container">
+                <div class="flexb-wrap">
+                    <div class="flex-col-5">
+                        <div class="card-lorem">
+                            <img src="img/slp-icon-2.svg" width="65">
+                            <h1 class="">Lorem ipsum</h1>
+                            <br>
+                            <p class="">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="card-lorem">
+                            <img src="img/slp-icon-3.svg" width="65">
+                            <h1 class="">Lorem ipsum</h1>
+                            <br>
+                            <p class="">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex-col-5">
+                        <div class="card-lorem">
+                            <img src="img/slp-icon-4.svg" width="65">
+                            <h1 class="">Lorem ipsum</h1>
+                            <br>
+                            <p class="">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="card-lorem">
+                            <img src="img/slp-icon-1.svg" width="65">
+                            <h1 class="">Lorem ipsum</h1>
+                            <br>
+                            <p class="">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <button style="padding: 15px 25px;" class="uppercase">
+                        Talk to a consultant
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="last-section">
+            <div class="flexb-container">
+                <div class="flexb-wrap">
+                    <div class="flex-col-5">
+                        <div style="" >
+                            <p class="">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex-col-5">
+                        <div>
+                            <button style="padding: 15px 5px;" class="uppercase">
+                            Lorem ipsum
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="col-align-center">
+                    <a href="#"><img src="img/slp-logo-icon-neg.svg" width="150" class="margin-please"></a>
+                </div>
+            </div>
+        </footer>
         
     </main>
 

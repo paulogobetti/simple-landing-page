@@ -28,6 +28,11 @@ li {
     margin-left: 2em;
 }
 
+footer {
+    padding: 80px 0;
+    background: var(--primary-color);
+}
+
 /* GRID */
 
 .full-width {
@@ -133,6 +138,16 @@ li {
 #where {
     background: #fd0;
     justify-content: space-around;
+}
+
+#top-banner {
+    background: var(--primary-bg);
+}
+
+#last-section {
+    margin: 80px 0 0 0;
+    padding: 80px 0;
+    background: #f1f1f1;
 }
 
 /* BOOTSTRAP */
@@ -314,10 +329,6 @@ input[type="file"] {
     display: none;
 }
 
-#top-banner {
-    background: var(--primary-bg);
-}
-
 /* COLORS */
 
 .text-white {
@@ -364,6 +375,10 @@ input[type="file"] {
 
 .justify-end {
     justify-content: end;
+}
+
+.card-lorem {
+    padding: 20px;
 }
 
 /* MEDIA RULES */
