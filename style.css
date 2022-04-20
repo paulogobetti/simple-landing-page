@@ -58,7 +58,7 @@ li {
 }
 
 .outgrid-box {
-    margin: -100px 0;
+    margin: -50px 0;
 }
 
 .flex {
@@ -82,8 +82,15 @@ li {
 }
 
 .img-fluid {
-    max-width: 100%;
+    display: block;
     height: auto;
+    max-width: 100%;
+}
+
+.img-flex {
+    height: auto;
+    min-width: 240px;
+    width: 20%;
 }
 
 .flexb-container {
@@ -105,11 +112,27 @@ li {
     justify-content: center;
 }
 
+.flex-col-3 {
+    display: inline-block;
+    padding: 2%;
+    width: 30%;
+}
+
+.flex-col-4 {
+    display: inline-block;
+    padding: 2%;
+    width: 40%;
+}
+
 .flex-col-5 {
     display: inline-block;
     padding: 2%;
     width: 50%;
-    min-width: 275px;
+}
+
+#where {
+    background: #fd0;
+    justify-content: space-around;
 }
 
 /* BOOTSTRAP */
@@ -223,6 +246,7 @@ li {
 /* FORM */
 
 .form-box {
+    width: 334px;
     background: #fff;
     border-radius: 3%;
     padding: 5%;
@@ -234,19 +258,19 @@ fieldset {
 
 /* INPUTS WITHOUT LABELS */
 input[type=text], input[type=password], input[type=email], input[type=tel] {
-    width: auto;
+    width: 100%;
     outline: none;
     border: none;
+    border-radius: 5px;
     background: #f7f7f7;
     padding: 10px;
-    border-radius: 5px;
     margin: 2% 0;
 }
 
 label#label-inline {
-    display: inline-block;
+    display: inline-flex;
     font-size: 12px;
-    min-width: 50px;
+    min-width: 60px;
 }
 
 /* INPUTS WITH LABELS INLINE */
@@ -291,7 +315,7 @@ input[type="file"] {
 }
 
 #top-banner {
-    background: var(--primary-bg)
+    background: var(--primary-bg);
 }
 
 /* COLORS */
@@ -310,13 +334,63 @@ input[type="file"] {
     text-align: justify;
 }
 
+/* CARDS */
+
+.soft-card {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.048);
+}
+
+.outgrid-img {
+    margin-top: -20px;
+}
+
+.outgrid-txt-repair {
+    margin-top: -25px;
+}
+
+#begin {
+    padding: 80px 0;
+}
+
+.border-left {
+    border-left: 2px solid #6a4d9b;
+    padding: 30px 0 30px 20px;
+    margin-left: -30px;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
 /* MEDIA RULES */
 
 @media (max-width: 549px) {
-    .flex-col-5 {
+    .flex-col-3, .flex-col-4, .flex-col-5 {
         width: 100%;
     }
+    .form-box {
+        width: 93%;
+    }
+    input[type=text], input[type=password], input[type=email], input[type=tel] {
+        min-width: 100%;
+    }
+    .outgrid-box, .outgrid-img {
+        margin: 0;
+    }
+    .align-right {
+        align-content: center;
+        text-align: center;
+    }
+}
 
+@media (max-width: 889px) {
+    .outgrid-box {
+        margin: 0;
+    }
 }
 
 @media (min-width: 1px) {
