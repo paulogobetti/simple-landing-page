@@ -2,14 +2,15 @@
     --text-white: #fff;
     --primary-color: #2a82ef;
     --secondary-color: #fff;
+    --primary-bg: #2a82ef;
 }
 
 * {
-    font-family: Raleway!important;
+    font-family: Montserrat;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #000;
+    word-wrap: break-word;
 }
 
 h2 {
@@ -24,26 +25,8 @@ h3 {
 li {
     margin-bottom: 2%;
     color: var(--secondary-color);
+    margin-left: 2em;
 }
-
-/**************/
-
-/*
-.flexb-form {
-    width: 70%;
-    height: 85%;
-    background: #fff;
-    border-radius: .5em;
-    padding: 4%;
-    margin: 4%;
-}
-*/
-
-/**************/
-
-
-
-/******/
 
 /* GRID */
 
@@ -78,6 +61,18 @@ li {
     margin: -100px 0;
 }
 
+.flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
 .margin-please {
     margin: 1.3%;
 }
@@ -91,45 +86,30 @@ li {
     height: auto;
 }
 
-.flex {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-
-.break {
-    flex-basis: 100%;
-    height: 0;
-}
-
-.flexb-body {
-    height: auto;
-    width: 100%;
-    background: #2a82ef;
-}
-
 .flexb-container {
-    height: 100%;
-    margin: auto;
     max-width: 1140px;
+    margin: auto;
 }
 
 .flexb-wrap {
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
 }
 
-.flexb-col-2 {
-    min-width: 50%;
+.col-align-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-col-5 {
     display: inline-block;
-    background-color: blue;
-    padding: 3%;
-    align-content: center;
+    padding: 2%;
+    width: 50%;
+    min-width: 275px;
 }
 
 /* BOOTSTRAP */
@@ -242,11 +222,10 @@ li {
 
 /* FORM */
 
-.form-container {
-    display: inline-block;
+.form-box {
     background: #fff;
     border-radius: 3%;
-    padding: 5% 5%;
+    padding: 5%;
 }
 
 fieldset {
@@ -255,17 +234,6 @@ fieldset {
 
 /* INPUTS WITHOUT LABELS */
 input[type=text], input[type=password], input[type=email], input[type=tel] {
-    width: 97%;
-    outline: none;
-    border: none;
-    background: #f7f7f7;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 2% 0;
-}
-
-/* INPUTS WITH LABELS INLINE */
-label + input[type=text], label + input[type=password], label + input[type=email], label + input[type=tel] {
     width: auto;
     outline: none;
     border: none;
@@ -275,8 +243,19 @@ label + input[type=text], label + input[type=password], label + input[type=email
     margin: 2% 0;
 }
 
+label#label-inline {
+    display: inline-block;
+    font-size: 12px;
+    min-width: 50px;
+}
+
+/* INPUTS WITH LABELS INLINE */
+label + input[type=text], label + input[type=password], label + input[type=email], label + input[type=tel] {
+    width: auto;
+}
+
 input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=tel]:focus {
-    background: #e6e6e6;
+    background: #f0f0f0;
 }
 
 select {
@@ -286,12 +265,6 @@ select {
     background: #f7f7f7;
     padding: 10px;
     border-radius: 5px;
-}
-
-label#label-inline {
-    font-size: 12px;
-    display: inline-block;
-    min-width: 80px;
 }
 
 input[type=button], input[type=submit], button {
@@ -318,7 +291,7 @@ input[type="file"] {
 }
 
 #top-banner {
-    background: var(--primary-color);
+    background: var(--primary-bg)
 }
 
 /* COLORS */
@@ -338,6 +311,13 @@ input[type="file"] {
 }
 
 /* MEDIA RULES */
+
+@media (max-width: 549px) {
+    .flex-col-5 {
+        width: 100%;
+    }
+
+}
 
 @media (min-width: 1px) {
     .container {

@@ -23,67 +23,65 @@
 
 <body>
 
-    <main>
-        <header>
-            <div class="container align-center">
-                <div>
-                    <a href="#"><img src="img/slp-logo-icon.svg" width="150" class="margin-please"></a>
-                </div>
+    <header>
+        <div class="container align-center">
+            <div>
+                <a href="#"><img src="img/slp-logo-icon.svg" width="150" class="margin-please"></a>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <section>
-            <div class="flexb-body">
-                <div class="flexb-container">
-                    <div class="flexb-wrap">
-                        <div class="flexb-col-2"> <!-- A COL -->
-                            <div class="col-align-middle"> <!-- LIST -->
-                                <h2 class="text-white">
-                                    A simple page designed to sell!
-                                </h2>
-                                <br>
-                                <ul class="">
-                                    <li class="list-check">Simple and efficient</li>
-                                    <li class="list-check">Modern</li>
-                                    <li class="list-check">More performance</li>
-                                    <li class="list-check">Client connection</li>
-                                    <li class="list-check">Lead capture</li>
-                                </ul>
-                            </div>
+    <main>
+        <section id="top-banner">
+            <div class="flexb-container">
+                <div class="flexb-wrap">
+                    <div class="flex-col-5"> <!-- A SIDE -->
+                        <div class="col-align-middle"> <!-- LIST -->
+                            <h2 class="text-white">
+                                A simple page designed to sell!
+                            </h2>
+                            <br>
+                            <ul class="">
+                                <li class="list-check">Simple and efficient</li>
+                                <li class="list-check">Modern</li>
+                                <li class="list-check">More performance</li>
+                                <li class="list-check">Client connection</li>
+                                <li class="list-check">Lead capture</li>
+                            </ul>
                         </div>
-                        <div class="flexb-col-2"> <!-- B COL -->
-                            <div class=""> <!-- FORM -->
-                                <form action="action.php" method="POST" id="form-lead" class="form-container">
-                                    <h3>
-                                        Enter your details<br>to speak with a consultant:
-                                    </h3>
-                                    <fieldset>
-                                        <label for="nome" id="label-inline">Name:</label>
-                                        <input type="text" name="nome" id="nome">
-                                        <br>
-                                        <label for="email" id="label-inline">Email:</label>
-                                        <input type="email" name="email" id="email">
-                                        <br>
-                                        <label for="cidade" id="label-inline">City:</label>
-                                        <input type="text" name="cidade" id="cidade">
-                                        <br>
-                                        <label for="telephone" id="label-inline">Telephone:</label>
-                                        <input type="tel" name="telephone" id="telephone">
-                                        <br><br>
-                                        <h5>What is your company's niche?</h5>
-                                        <select name="type" id="type">
-                                            <option value="#"></option>
-                                            <option value="Type A">Type A</option>
-                                            <option value="Type B">Type B</option>
-                                            <option value="Type C">Type C</option>
-                                        </select>
-                                        <br><br>
-                                        <div class="full-width">
-                                            <input type="submit" name="submit" id="submit" value="Speak With A Consultant" class="uppercase">
-                                        </div>
-                                    </fieldset>
-                                </form>
-                            </div>
+                    </div>
+                    <div class="flex-col-5">  <!-- B SIDE -->
+                        <div class="col-align-center"> <!-- FORM -->
+                            <form action="action.php" method="POST" id="form-lead" class="form-box">
+                                <h3>
+                                    Enter your details<br>to speak with a consultant:
+                                </h3>
+                                <fieldset>
+                                    <label for="nome" id="label-inline">Name:</label>
+                                    <input type="text" name="nome" id="nome">
+                                    <br>
+                                    <label for="email" id="label-inline">Email:</label>
+                                    <input type="email" name="email" id="email">
+                                    <br>
+                                    <label for="cidade" id="label-inline">City:</label>
+                                    <input type="text" name="cidade" id="cidade">
+                                    <br>
+                                    <label for="telephone" id="label-inline">Tel.:</label>
+                                    <input type="tel" name="telephone" id="telephone">
+                                    <br><br>
+                                    <h5>What is your company's niche?</h5>
+                                    <select name="type" id="type">
+                                        <option value="#"></option>
+                                        <option value="Type A">Type A</option>
+                                        <option value="Type B">Type B</option>
+                                        <option value="Type C">Type C</option>
+                                    </select>
+                                    <br><br>
+                                    <div class="full-width">
+                                        <input type="submit" name="submit" id="submit" value="Speak With A Consultant" class="uppercase">
+                                    </div>
+                                </fieldset>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -111,6 +109,7 @@
             </div>
         </section>
     </main>
+
 </body>
 
 </html>
