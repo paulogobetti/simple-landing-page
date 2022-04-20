@@ -14,11 +14,11 @@ if(isset($_POST['submit']))
 
     $to = "paulogobetti@outlook.com.br";
     $subject = "New landing page lead: .$email";
-    $body = "Name: ".$nome."\r\n".
+    $body = "Name: ".$name."\r\n".
             "Email: ".$email."\r\n".
-            "City: ".$cidade."\r\n".
-            "Telephone: ".$telefone."\r\n".
-            "Type: ".$tipo;
+            "City: ".$city."\r\n".
+            "Telephone: ".$tel."\r\n".
+            "Type: ".$type;
     $header = "From:email@nxsagencia.com"."\r\n".
               "Reply-To:".$email."\e\n".
               "X=Mailer:PHP/".phpversion();

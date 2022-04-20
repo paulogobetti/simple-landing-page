@@ -3,12 +3,12 @@
     $dbHost = 'Localhost';
     $dbUsername = 'webmaster';
     $dbPassword = '';
-    $dbName = 'landingpagephp';
+    $dbName = 'simplelandingpage';
 
     $connection = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
 
     /*
-    if($conexao->connect_errno)
+    if($connection->connect_errno)
         {
             echo "Erro";
         }
